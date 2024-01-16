@@ -19,6 +19,13 @@ header, .add-buttons, #add-section, .list{
   background-color: white;
 }
 
+/* fix centratura verticale */
+h1, .list-tag{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 /* header */
 
 header{
@@ -34,9 +41,6 @@ header img{
 h1{
   font-size: 50px;
   display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
 }
 
 /* main */
@@ -66,11 +70,79 @@ main section .add-buttons input{
 }
 
 .list{
-  
+  padding: 20px 50px 50px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-main section .list ul{
+main section div ul li{
   list-style: none;
   font-size: 24px;
+  color: rgb(65, 69, 79);
   font-weight: bold;
+}
+
+main section div ul .list-row{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+main section div ul .list-title{
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+main section div ul .list-state{
+  font-size: medium;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+main section div ul .check{
+  border: 2px solid rgb(107, 194, 172);
+  color: rgb(107, 194, 172);
+}
+
+main section div ul .cross{
+  border: 2px solid rgb(237, 89, 78);
+  color: rgb(237, 89, 78);
+}
+
+.list-note, .list-tag{
+  font-weight: normal;
+}
+
+main section div ul .list-tag{
+  color: white;
+  padding: 7px 10px;
+  margin-left: 7px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+main section div ul .editorial{
+  background-color: rgb(68, 171, 235);
+}
+
+main section div ul .q1-goals{
+  background-color: rgb(155, 113, 227);
+}
+
+main section div ul .recruiting{
+  background-color: rgb(100, 192, 169);
+}
+
+main section div ul .mobile{
+  background-color: rgb(242, 159, 51);
+}
+
+main section div ul .website{
+  background-color: rgb(217, 100, 162);
+}
+
+main section div ul .sales{
+  background-color: rgb(177, 201, 38);
 }
