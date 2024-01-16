@@ -6,6 +6,7 @@
 
 body{
   background-color: rgb(236, 239, 240);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container{
@@ -14,11 +15,14 @@ body{
   margin-top: 50px;
 }
 
+header, .add-buttons, #add-section, .list{
+  background-color: white;
+}
+
 /* header */
 
 header{
   height: 90px;
-  background-color: white;
   position: relative;
 }
 
@@ -29,7 +33,6 @@ header img{
 
 h1{
   font-size: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -38,6 +41,36 @@ h1{
 
 /* main */
 
-section{
-  background-color: white;
+.add-buttons{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 2px;
+}
+
+main section .add-buttons input{
+  padding: 7px 10px;
+  border-radius: 7px;
+  margin: 20px 0 10px;
+}
+
+#add-task{
+  border: 1px solid rgb(70, 173, 242);
+  background-color: rgb(70, 173, 242);
+  color: white;
+  margin-left: 70px;
+}
+
+#add-section{
+  border: 1px solid rgb(206, 210, 214);
+  color: rgb(206, 210, 214);
+}
+
+.list{
+  
+}
+
+main section .list ul{
+  list-style: none;
+  font-size: 24px;
+  font-weight: bold;
 }
