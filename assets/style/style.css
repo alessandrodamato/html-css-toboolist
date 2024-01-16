@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(236, 239, 240);
+}
+
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* header */
+
+header{
+  height: 90px;
+  background-color: white;
+  position: relative;
+}
+
+header img{
+  width: 60px;
+  margin: 15px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* main */
+
+section{
+  background-color: white;
+}
